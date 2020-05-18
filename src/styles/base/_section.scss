@@ -1,0 +1,17 @@
+.section {
+
+}
+
+.section--hero {
+  background: $dark;
+  min-height: calc(100vh - 75px);
+  padding-top: 90px;
+  position: relative;
+  border-bottom: 1px solid $red;
+
+  @media (min-width: $min-lg) {
+    min-height: unset;
+    padding-top: 100px;
+    height: calc(100vh - 91px);
+  }
+}

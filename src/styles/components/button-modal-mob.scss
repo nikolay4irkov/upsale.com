@@ -1,0 +1,28 @@
+.button-modal-wrapper {
+  background: $grey;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 335px;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-modal__text {
+  padding: 19px 0 19px 25px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.button-modal {
+  margin-left: auto;
+  border-radius: 30px;
+  display: block;
+  background: $yellow;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 27px 24px;
+  border: none;
+}

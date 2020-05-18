@@ -1,0 +1,12 @@
+.hero__left-col {
+  //margin-bottom: 100px;
+
+  @media (min-width: $min-lg) {
+    margin-bottom: unset;
+    width: 740px;
+  }
+}
+
+.hero__right-col {
+
+}

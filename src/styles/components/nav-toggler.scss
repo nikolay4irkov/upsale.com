@@ -1,0 +1,60 @@
+.nav-toggler {
+  position: relative;
+  background: none;
+  border: none;
+  width: 27px;
+  height: 12px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 21;
+  outline: none;
+
+  @media (min-width: $min-md) {
+    display: none;
+  }
+}
+
+.nav-toggler__line {
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  left: 0;
+  background: $yellow;
+  border-radius: 4px;
+  transition: all $basic-transition;
+
+  .nav-toggler.is-active & {
+    background: $black;
+  }
+
+  &:first-child {
+    top: 0;
+
+    .nav-toggler.is-active & {
+      //transform: rotate(45deg) translateY(4px) translateX(4px);
+      transform: translateY(4px) rotate(45deg) translateX(0);
+    }
+  }
+
+  &:last-child {
+    bottom: 0;
+
+    .nav-toggler.is-active & {
+      /*bottom: 7px;*/
+      //width: 50%;
+      //transform:  translateY(-3px) translateX(-1px) rotate(-45deg);
+      transform: translateY(-4px) rotate(-45deg);
+    }
+  }
+}
+
+/*
+.nav-toggler__dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1px;
+  height: 1px;
+  background: red;
+}*/

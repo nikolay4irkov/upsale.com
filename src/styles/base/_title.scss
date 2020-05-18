@@ -1,22 +1,26 @@
-.title-main-page {
-  font-size: 36px;
+.ttl-1 {
+  font-size: 27px;
+  line-height: 31px;
+  background: $yellow-logo;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 3px transparent;
+  color: $dark;
 
   @media screen and (min-width: $min-md) {
-    font-size: 48px;
+    font-size: 61px;
+    line-height: 70px;
+    -webkit-text-stroke: 4px transparent;
   }
 }
 
-.title-section {
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.subtitle-main-page {
-  font-size: 24px;
-  font-weight: 500;
+.text-hero {
+  font-size: 16px;
+  line-height: 18px;
+  color: $grey;
 
   @media screen and (min-width: $min-md) {
-    font-size: 19px;
-    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
+

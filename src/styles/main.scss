@@ -10,9 +10,9 @@
 @import 'base/basic-spacings';
 @import 'base/basic-sizes';
 @import 'base/title';
-@import 'base/text';
 @import 'base/buttons';
 @import 'base/d-flex';
+@import 'base/section';
 @import 'base/layout-blocks';
 
 //includes
@@ -20,4 +20,11 @@
 @import 'includes/header';
 
 //components
-@import 'components/404';
+@import 'components/nav-toggler';
+@import 'components/forms';
+@import 'components/select';
+@import 'components/circle';
+@import 'components/button-modal-mob';
+
+//sections
+@import 'pages/hero';

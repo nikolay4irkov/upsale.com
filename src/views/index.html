@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MRB</title>
-    //= includes/head.html
-  </head>
-  <body>
-    //= includes/header.html
-    <main></main>
-    //= includes/footer.html
-    <!-- -->
-    //= includes/scripts.html
-  </body>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>MRB</title>
+  //= includes/head.html
+</head>
+<body>
+//= includes/header.html
+<main>
+  <section class="section section--hero">
+    <div class="container">
+      <div class="d-flex d-flex--space-between">
+        <div class="hero__left-col">
+          <h1 class="ttl-1 mb-20 mb-md-30">Комплексный подход по увеличению продаж</h1>
+          <p class="text-hero d-none d-md-block mb-md-30">UPsale. - это не просто термин или техника которая активно
+            применяется в продажах.</p>
+          <p class="text-hero">UPsale. - это новый уровень. Команда которая освободит вас от рутинной, возможно
+            незнакомой, работы и при этом усилит ваши коммерческие показатели.</p>
+        </div>
+        <div class="d-none d-md-block hero__right-col">
+          <form action="" class="form form-hero">
+            <p class="form-hero__title">Оставьте заявку на бесплатную консультацию</p>
+            <input type="text" class="form__input form__input--name" placeholder="Ваше имя">
+            <input type="tel" class="form__input form__input--phone" placeholder="Телефон">
+            <input type="email" class="form__input form__input--email" placeholder="Email">
+
+            <select name="" class="form-hero__select">
+              <option value="">Отдел продаж «под ключ»</option>
+              <option value="">Отдел продаж</option>
+              <option value="">Аудит</option>
+            </select>
+            <button type="submit" class="button form-hero__button mx-auto mt-20">Отправить</button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="circle-wrapper">
+        <!--<img src="./img/sprites/sprite.svg#arrow" alt="" class="arrow-animation">-->
+        <svg class="arrow-animation" width="8" height="156" viewBox="0 0 8 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.64645 155.354C3.84172 155.549 4.1583 155.549 4.35356 155.354L7.53554 152.172C7.7308 151.976 7.7308 151.66 7.53554 151.464C7.34028 151.269 7.0237 151.269 6.82843 151.464L4.00001 154.293L1.17158 151.464C0.976317 151.269 0.659735 151.269 0.464473 151.464C0.269211 151.66 0.269211 151.976 0.464473 152.172L3.64645 155.354ZM3.5 2.18557e-08L3.50001 155L4.50001 155L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="black"/>
+        </svg>
+
+        <a href="#" class="circle"></a>
+
+      </div>
+
+      <div class="button-modal-wrapper d-md-none">
+        <p class="button-modal__text">Подай заявку на консультацию бесплатно</p>
+        <button class="button-modal">Записаться</button>
+      </div>
+
+
+    </div>
+  </section>
+
+</main>
+//= includes/footer.html
+<!-- -->
+//= includes/scripts.html
+</body>
 </html>

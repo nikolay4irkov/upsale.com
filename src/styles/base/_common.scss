@@ -25,7 +25,7 @@ span,
 button,
 a,
 div {
-  letter-spacing: 0.05em;
+  //letter-spacing: 0.05em;
 }
 
 html {
@@ -37,13 +37,13 @@ body {
   max-width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-weight: normal;
   background: $white;
-  padding-top: 95px;
+  padding-top: 74px;
 
   @media (min-width: $min-sm) {
-    padding-top: 125px;
+    padding-top: 92px;
   }
 }
 
@@ -61,34 +61,41 @@ main {
   position: relative;
   transition: opacity 0.55s, transform 0.55s;
 
-  &:not(.is-loaded) {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+  //&:not(.is-loaded) {
+  //  opacity: 0;
+  //  transform: translateY(20px);
+  //}
 }
 
 .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 
   //Писать свои значения
-  // @media (min-width: $min-md) {
-  //   max-width: 980px;
-  // }
+   @media (min-width: $min-md) {
+     max-width: 980px;
+   }
 
-  // @media (min-width: $min-lg) {
-  //   max-width: 1110px;
-  // }
+   @media (min-width: $min-lg) {
+     max-width: 1110px;
+     padding: 0;
+   }
 
-  // @media (min-width: 1500px) {
-  //   max-width: 1210px;
-  // }
+   @media (min-width: 1368px) {
+     max-width: 1210px;
+   }
 }
 
 .d-md-block {
   @media (min-width: $min-md) {
     display: block;
+  }
+}
+
+.d-md-none {
+  @media (min-width: $min-md) {
+    display: none !important;
   }
 }
 
@@ -98,29 +105,6 @@ main {
 
 .position-relative {
   position: relative;
-}
-
-.img {
-  object-fit: cover;
-  object-position: center;
-}
-
-.mob-hidden {
-  @media (max-width: $max-sm) {
-    display: none;
-  }
-}
-
-.mob-visible {
-  @media (min-width: $min-sm) {
-    display: none;
-  }
-}
-
-.d-sm-block {
-  @media (min-width: $min-sm) {
-    display: block;
-  }
 }
 
 .js-visible {
