@@ -15,3 +15,14 @@
     height: calc(100vh - 91px);
   }
 }
+
+.section--services {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background: #F4F4F4;
+
+  @media (min-width: $min-lg) {
+    padding-bottom: 200px;
+    padding-top: 80px;
+  }
+}

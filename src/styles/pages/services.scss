@@ -1,0 +1,137 @@
+.tabs {
+  @media (min-width: $min-md) {
+    width: 440px;
+    min-width: 440px;
+    max-width: 440px;
+    margin-right: 110px;
+  }
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  height: 63px;
+  width: 100%;
+  font-weight: 300;
+  color: rgba(0,0,0, 0.5);
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background: #E8E7E5;
+  z-index: 2;
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+  //margin-bottom: 30px;
+  border-bottom: 1px solid #C2C2C2;
+
+  &:after {
+    //transition: border-left 0.05s 0.5s linear;
+    content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    left:100%;
+    top:50%;
+    transform: translateY(-50%);
+    border:45px solid transparent;
+    border-left: 0px solid $yellow;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: $yellow;
+    z-index: -1;
+    transition: width $basic-transition linear;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &.is-active {
+    //font-weight: normal;
+
+    color: $black;
+    border-color: $yellow;
+
+    &:after {
+      border-left: 40px solid $yellow;
+    }
+
+    &:before {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $max-lg) {
+    height: 90px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.tab.is-active {
+  &:after {
+    transition: border-left 0.001s 0.3s linear;
+  }
+}
+
+
+.tab-content {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 1s, height 1s;
+  padding: 0 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      //top: 50%;
+      top: 10px;
+      left: 0;
+      //transform: translateY(-50%);
+      height: 2px;
+      width: 10px;
+      background: $black;
+    }
+
+    @media (min-width: $min-md) {
+      &:before {
+        top: 14px;
+      }
+    }
+  }
+
+  &.is-active {
+    margin: 10px 0;
+    height: auto;
+    opacity: 1;
+
+    @media screen and (min-width: $min-md) {
+      padding: 10px 0;
+      margin-top: 0;
+      font-size: 22px;
+      line-height: 33px;
+    }
+  }
+}
+
+.services-wrapper {
+  display: flex;
+}

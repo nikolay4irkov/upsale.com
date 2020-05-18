@@ -29,3 +29,14 @@
   margin-right: auto !important;
   margin-left: auto !important;
 }
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-lg-50 {
+  @media (min-width: $min-lg) {
+    margin-bottom: 50px;
+  }
+}
+
