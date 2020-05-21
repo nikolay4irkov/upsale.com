@@ -1,0 +1,135 @@
+.card {
+  width: 220px;
+  height: 220px;
+  background: #383737;
+  box-shadow: 0px 4px 30px #3C3535;
+  position: relative;
+  padding: 143px 35px 25px;
+  transition: background $long-transition;
+
+  &.is-hovered {
+    //background: linear-gradient(180deg, rgba(182, 175, 175, 0.7) 0%, #FFFFFF 100%), #C4C4C4;
+    background: #e7e5e5;
+  }
+
+  @media (min-width: $min-lg) {
+    padding: 177px 60px 40px;
+    width: 276px;
+    height: 276px;
+  }
+}
+
+.card__front {
+
+  transition: opacity $basic-transition;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media (min-width: $min-lg) {
+
+  }
+}
+
+.card__img {
+  object-fit: cover !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $min-lg) {
+
+  }
+}
+
+.card__img--1 {
+  width: 98px;
+  height: 87px;
+  top: 34px;
+
+  @media (min-width: $min-lg) {
+    top: 38px;
+    width: 122px;
+    height: 109px;
+  }
+}
+
+.card__img--2 {
+  width: 106px;
+  height: 106px;
+  top: 38px;
+
+  @media (min-width: $min-lg) {
+    width: 139px;
+    height: 139px;
+  }
+}
+
+.card__img--3 {
+  width: 97px;
+  height: 58px;
+  top: 70px;
+
+  @media (min-width: $min-lg) {
+    top: 72px;
+    width: 129px;
+    height: 78px;
+  }
+}
+
+.card__img--4 {
+  width: 93px;
+  height: 74px;
+  top: 63px;
+
+  @media (min-width: $min-lg) {
+    top: 59px;
+    width: 118px;
+    height: 94px;
+  }
+}
+
+.card__title {
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
+  text-align: center;
+
+  @media (min-width: $min-lg) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.card__back {
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $basic-transition;
+
+  &.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (min-width: $min-lg) {
+
+  }
+}
+
+.card__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  line-height: 18px;
+  width: 70%;
+
+  @media (min-width: $min-lg) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

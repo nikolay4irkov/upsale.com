@@ -8,8 +8,20 @@
   flex-direction: column;
 }
 
+.d-flex-lg-row {
+  @media (min-width: $min-lg){
+    flex-direction: row;
+  }
+}
+
 .d-flex--space-between {
   justify-content: space-between;
+}
+
+.d-flex-lg-space-between {
+  @media (min-width: $min-lg){
+    justify-content: space-between;
+  }
 }
 
 .d-flex--space-center {

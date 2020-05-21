@@ -18,11 +18,29 @@
 
 .section--services {
   padding-top: 60px;
-  padding-bottom: 20px;
+  //padding-bottom: 20px;
   background: #F4F4F4;
 
   @media (min-width: $min-lg) {
-    padding-bottom: 200px;
+    //padding-bottom: 200px;
     padding-top: 80px;
+  }
+}
+
+.section--running {
+  background: #F4F4F4;
+  padding-top: 25px;
+
+  @media (min-width: $min-lg){
+    padding-top: 120px;
+  }
+}
+
+.section--cards {
+  background: #F4F4F4;
+  padding-top: 60px;
+
+  @media (min-width: $min-lg){
+    padding-top: 90px;
   }
 }

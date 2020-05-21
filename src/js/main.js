@@ -9,4 +9,5 @@ import './burger';
 import './select';
 import './service-rebuild';
 import './tabs';
+import './card';
 
