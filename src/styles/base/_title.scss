@@ -52,3 +52,16 @@
   }
 }
 
+.text {
+  font-size: 14px;
+  line-height: 16px;
+
+  @media screen and (min-width: $min-md) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+.text-centered {
+  text-align: center;
+}

@@ -87,9 +87,19 @@ main {
    }
 }
 
+.container--wide {
+  @media (min-width: $min-lg) {
+    max-width: 1300px;
+  }
+
+  @media (min-width: 1368px) {
+    max-width: 1300px;
+  }
+}
+
 .d-md-block {
   @media (min-width: $min-md) {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -100,7 +110,7 @@ main {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .position-relative {
@@ -116,3 +126,16 @@ main {
     }
   }
 }
+
+.d-lg-none {
+  @media (min-width: $min-lg) {
+    display: none;
+  }
+}
+
+.d-lg-flex {
+  @media (min-width: $min-lg) {
+    display: flex !important;
+  }
+}
+

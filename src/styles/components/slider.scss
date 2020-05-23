@@ -1,0 +1,53 @@
+.swiper-button-prev {
+  background: url("../img/sprites/sprite.svg#arrow-left")no-repeat center;
+  background-size: cover;
+  left: -30px;
+
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+}
+
+.swiper-button-next {
+  background: url("../img/sprites/sprite.svg#arrow-right")no-repeat center;
+  background-size: cover;
+  right: -30px;
+
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(100%, -50%);
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+}
+
+.swiper-container--recommendations {
+  width: 100%;
+}
+
+.swiper-slide--recommendation {
+  width: 100%;
+}
+
+.iframe {
+  width: 100%;
+}
+
+.slide-block {
+height: 120px;
+}
+
+.slide__title {
+
+}
+
+.slide__text {
+
+}

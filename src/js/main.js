@@ -10,4 +10,6 @@ import './select';
 import './service-rebuild';
 import './tabs';
 import './card';
+import './smooth-scroll';
+import './slider';
 

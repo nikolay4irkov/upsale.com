@@ -1,0 +1,31 @@
+.advantage {
+  position: relative;
+  flex: 1 0 30%;
+  height: 200px;
+  //border: 1px solid $grey;
+  padding-left: 150px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 80px;
+
+  &:nth-child(4),  &:nth-child(5){
+    max-width: 35%;
+  }
+}
+.advantage__number {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 200px;
+  color: rgba(152, 148, 148, 0.3);
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+
+}
+.advantage__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

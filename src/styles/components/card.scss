@@ -2,20 +2,30 @@
   width: 220px;
   height: 220px;
   background: #383737;
-  box-shadow: 0px 4px 30px #3C3535;
+  cursor: pointer;
   position: relative;
   padding: 143px 35px 25px;
-  transition: background $long-transition;
+  transition: background $long-transition, box-shadow $basic-transition;
+  margin-bottom: 65px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   &.is-hovered {
-    //background: linear-gradient(180deg, rgba(182, 175, 175, 0.7) 0%, #FFFFFF 100%), #C4C4C4;
     background: #e7e5e5;
+    box-shadow: 0px 4px 30px #3C3535;
   }
 
   @media (min-width: $min-lg) {
     padding: 177px 60px 40px;
     width: 276px;
     height: 276px;
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -12,5 +12,5 @@ $burger.on('click', function() {
 $menuLink.on('click', function() {
   $menu.toggleClass('is-active');
   $burger.toggleClass('is-active');
-  $body.toggleClass('is-static');
+  /*$body.toggleClass('is-static');*/
 });

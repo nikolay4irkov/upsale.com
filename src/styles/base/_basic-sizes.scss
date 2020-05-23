@@ -1,1 +1,5 @@
-
+.w-lg-850 {
+  @media (min-width: $min-lg){
+    width: 850px;
+  }
+}
