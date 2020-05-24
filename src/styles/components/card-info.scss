@@ -1,0 +1,19 @@
+.card-info {
+  width: 200px;
+  height: 180px;
+  border: 2px solid #ECC92F;
+  padding: 38px 10px 0 25px;
+  position: relative;
+}
+
+.card-info__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-info__img {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}

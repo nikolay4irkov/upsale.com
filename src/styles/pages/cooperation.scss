@@ -1,0 +1,26 @@
+.cooperation__info {
+  text-align: center;
+}
+
+.cooperation__title {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 5px;
+
+  @media (min-width: $min-lg){
+    margin-bottom: 10px;
+    font-size: 27px;
+    line-height: 31px;
+  }
+}
+
+.cooperation__text {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 20px;
+
+  @media (min-width: $min-lg){
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

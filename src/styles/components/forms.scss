@@ -2,6 +2,22 @@
 
 }
 
+.form--cooperation {
+  width: 270px;
+
+  .form__input {
+    height: 40px;
+  }
+
+  @media (min-width: $min-lg) {
+    width: 400px;
+
+    .form__input {
+      height: 50px;
+    }
+  }
+}
+
 .form-hero {
   width: 400px;
   height: 335px;
@@ -26,6 +42,26 @@
   background: transparent;
   margin-bottom: 11px;
   padding-left: 14px;
+  position: relative;
+  border-radius: unset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-size: 20px !important;
+  background-position: center right 20px !important;
+
+
+
+
+
+  .form--cooperation & {
+    background: $yellow;
+
+    @media (min-width: $min-lg) {
+      background: #D5D2D2;
+      background-size: 25px !important;
+    }
+  }
 
   &::placeholder {
     color: rgba(0, 0, 0, 0.5);
@@ -33,15 +69,42 @@
 }
 
 .form__input--name {
+  background: transparent url("../img/sprites/sprite.svg#person") no-repeat;
+
+  .form--cooperation & {
+    background: $yellow url("../img/sprites/sprite.svg#person") no-repeat;
+
+    @media (min-width: $min-lg) {
+      background: #D5D2D2 url("../img/sprites/sprite.svg#person") no-repeat;
+    }
+  }
 
 }
 
 .form__input--phone {
+  background: transparent url("../img/sprites/sprite.svg#phone") no-repeat;
+
+  .form--cooperation & {
+    background: $yellow url("../img/sprites/sprite.svg#phone") no-repeat;
+
+    @media (min-width: $min-lg) {
+      background: #D5D2D2 url("../img/sprites/sprite.svg#phone") no-repeat;
+    }
+  }
 
 }
 
 .form__input--email {
+  background: transparent url("../img/sprites/sprite.svg#mail") no-repeat;
 
+
+  .form--cooperation & {
+    background: $yellow url("../img/sprites/sprite.svg#mail") no-repeat;
+
+    @media (min-width: $min-lg) {
+      background: #D5D2D2 url("../img/sprites/sprite.svg#mail") no-repeat;
+    }
+  }
 }
 
 .form-hero__select {

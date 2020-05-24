@@ -28,6 +28,16 @@
   justify-content: center;
 }
 
+.d-flex--justify-end {
+  justify-content: flex-end;
+}
+
+.d-flex-lg-justify-center {
+  @media (min-width: $min-lg){
+    justify-content: center;
+  }
+}
+
 .d-flex--align-start {
   align-items: flex-start;
 }

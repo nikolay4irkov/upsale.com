@@ -36,9 +36,26 @@ button {
   line-height: 13px;
   font-weight: bold;
   padding-top: 8px;
+  color: $black;
 }
 
 .button-2--big {
   width: 280px;
   height: 45px;
+}
+
+.button-cooperation {
+  width: 150px;
+  height: 40px;
+  background: #C4C4C4;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $min-lg) {
+    background: $white;
+    width: 226px;
+    font-weight: bold;
+    padding: 13px;
+  }
 }
