@@ -51,8 +51,10 @@ border-bottom: 1px solid $red;
 
 .section--recommendations {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @media (min-width: $min-lg){
     padding-top: 70px;
+    padding-bottom: 210px;
   }
 }

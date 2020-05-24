@@ -60,6 +60,7 @@ textarea {
 main {
   position: relative;
   transition: opacity 0.55s, transform 0.55s;
+  overflow: hidden;
 
   //&:not(.is-loaded) {
   //  opacity: 0;
