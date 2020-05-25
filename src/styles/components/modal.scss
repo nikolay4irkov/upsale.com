@@ -1,0 +1,74 @@
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: $white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $basic-transition;
+  width: calc(100% - 50px);
+  padding: 58px 10px;
+  border-radius: 15px;
+
+  @media screen and (min-width: $max-md) {
+    width: 700px;
+    padding: 50px 75px 40px;
+  }
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.modal--video {
+  padding: 0;
+  box-shadow: none;
+  background: transparent;
+  width: 100%;
+
+  @media (min-width: $min-md) {
+    padding: 0;
+    width: auto;
+  }
+}
+
+.close-mod {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  object-fit: cover;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+
+.modal-bg {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity $basic-transition;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.modal-title {
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.modal-subtitle {
+  font-size: 16px;
+  line-height: 18px;
+}

@@ -25,6 +25,7 @@
 
   body.is-static & {
     background: $white;
+    bottom: 0;
   }
 
   @media (min-width: $min-md){
@@ -34,7 +35,6 @@
     }
   }
 }
-
 
 .logo {
   font-size: 30px;
@@ -103,6 +103,7 @@
     padding: 10px 52px;
     border-radius: 30px;
     border: 1px solid transparent;
+    transition: border $basic-transition;
 
     &:last-of-type {
       margin-right: 0;

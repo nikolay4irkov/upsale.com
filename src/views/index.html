@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <title>MRB</title>
+  <title>Upsale</title>
   //= includes/head.html
 </head>
 <body>
@@ -31,15 +31,18 @@
               <option value="">Отдел продаж</option>
               <option value="">Аудит</option>
             </select>
-            <button type="submit" class="button form-hero__button mx-auto mt-20">Отправить</button>
+            <button type="submit" class="button form-hero__button mx-auto mt-20 js-modal-call"
+                    data-modal-target="modal-thanks">Отправить
+            </button>
           </form>
         </div>
       </div>
       <div class="circle-wrapper">
         <!--<img src="./img/sprites/sprite.svg#arrow" alt="" class="arrow-animation">-->
-        <svg class="arrow-animation" width="8" height="156" viewBox="0 0 8 156" fill="none"
+
+        <svg class="arrow-animation" width="8" height="101" viewBox="0 0 8 101" fill="none"
              xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.64645 155.354C3.84172 155.549 4.1583 155.549 4.35356 155.354L7.53554 152.172C7.7308 151.976 7.7308 151.66 7.53554 151.464C7.34028 151.269 7.0237 151.269 6.82843 151.464L4.00001 154.293L1.17158 151.464C0.976317 151.269 0.659735 151.269 0.464473 151.464C0.269211 151.66 0.269211 151.976 0.464473 152.172L3.64645 155.354ZM3.5 2.18557e-08L3.50001 155L4.50001 155L4.5 -2.18557e-08L3.5 2.18557e-08Z"
+          <path d="M3.64645 100.354C3.84171 100.549 4.1583 100.549 4.35356 100.354L7.53554 97.1716C7.7308 96.9763 7.7308 96.6597 7.53554 96.4645C7.34028 96.2692 7.0237 96.2692 6.82843 96.4645L4.00001 99.2929L1.17158 96.4645C0.976317 96.2692 0.659734 96.2692 0.464472 96.4645C0.26921 96.6597 0.26921 96.9763 0.464472 97.1716L3.64645 100.354ZM3.5 3.10792e-08L3.50001 100L4.50001 100L4.5 -3.10792e-08L3.5 3.10792e-08Z"
                 fill="black"/>
         </svg>
 
@@ -48,7 +51,7 @@
       </div>
       <div class="button-modal-wrapper d-md-none">
         <p class="button-modal__text">Подай заявку на консультацию бесплатно</p>
-        <button class="button-modal">Записаться</button>
+        <button class="button-modal js-modal-call" data-modal-target="modal-form">Записаться</button>
       </div>
 
     </div>
@@ -195,7 +198,7 @@
         </div>
       </div>
 
-      <p class="w-lg-850 text text-centered mx-auto mb-40 mb-lg-50">*Даже если вы не увидели себя выше но вам нужны
+      <p class="w-lg-850 text  text-lg-centered mx-auto mb-40 mb-lg-50">*Даже если вы не увидели себя выше но вам нужны
         большие продажи, жмите на кнопку записаться на консультацию. Мы найдем решение для вас!</p>
       <a href="#cooperation" class="button button--link button-2 d-lg-none mx-auto js-anchor">Записаться</a>
       <a href="#cooperation" class="button button--link button-2 button-2--big d-none d-lg-flex mx-auto js-anchor">Записаться
@@ -326,7 +329,10 @@
           <option value="">Отдел продаж</option>
           <option value="">Аудит</option>
         </select>
-        <button type="submit" class="button button--link button-cooperation mx-auto">Отправить</button>
+        <button type="submit"
+                class="button button--link button-cooperation js-modal-call mx-auto"
+                data-modal-target="modal-thanks">Отправить
+        </button>
       </form>
 
     </div>
@@ -374,14 +380,47 @@
         </div>
         <div class="card-info">
           <p class="card-info__title">Разработка<br>и внедрение<br>системы продаж</p>
-          <svg class="card-info__img" width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.0001 7.50008V11.7501L17.6667 6.08341L12.0001 0.416748V4.66675C5.73841 4.66675 0.666748 9.73841 0.666748 16.0001C0.666748 18.2242 1.31841 20.2926 2.42341 22.0351L4.49175 19.9667C3.85425 18.7909 3.50008 17.4309 3.50008 16.0001C3.50008 11.3109 7.31091 7.50008 12.0001 7.50008ZM21.5767 9.96508L19.5084 12.0334C20.1317 13.2234 20.5001 14.5692 20.5001 16.0001C20.5001 20.6892 16.6892 24.5001 12.0001 24.5001V20.2501L6.33341 25.9167L12.0001 31.5834V27.3334C18.2617 27.3334 23.3334 22.2617 23.3334 16.0001C23.3334 13.7759 22.6817 11.7076 21.5767 9.96508Z" fill="black" fill-opacity="0.7"/>
+          <svg class="card-info__img" width="24" height="32" viewBox="0 0 24 32" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.0001 7.50008V11.7501L17.6667 6.08341L12.0001 0.416748V4.66675C5.73841 4.66675 0.666748 9.73841 0.666748 16.0001C0.666748 18.2242 1.31841 20.2926 2.42341 22.0351L4.49175 19.9667C3.85425 18.7909 3.50008 17.4309 3.50008 16.0001C3.50008 11.3109 7.31091 7.50008 12.0001 7.50008ZM21.5767 9.96508L19.5084 12.0334C20.1317 13.2234 20.5001 14.5692 20.5001 16.0001C20.5001 20.6892 16.6892 24.5001 12.0001 24.5001V20.2501L6.33341 25.9167L12.0001 31.5834V27.3334C18.2617 27.3334 23.3334 22.2617 23.3334 16.0001C23.3334 13.7759 22.6817 11.7076 21.5767 9.96508Z"
+                  fill="black" fill-opacity="0.7"/>
           </svg>
 
         </div>
       </div>
     </div>
   </section>
+
+  <div id="modal-form" class="modal modal-form">
+    <img src="./img/sprites/sprite.svg#close" alt="" class="close-mod js-modal-close">
+    <p class="modal-title text-centered mb-25">Записаться<br> на бесплатную консультацию:</p>
+    <form action="" class="form form--cooperation form--modal mx-auto">
+      <input type="text" class="form__input form__input--name" placeholder="Ваше имя">
+      <input type="tel" class="form__input form__input--phone" placeholder="Телефон">
+      <input type="email" class="form__input form__input--email" placeholder="Email">
+
+      <select name="" class="">
+        <option value="">Отдел продаж «под ключ»</option>
+        <option value="">Отдел продаж</option>
+        <option value="">Аудит</option>
+      </select>
+      <button type="submit"
+              class="button button--link button-cooperation mx-auto js-modal-close js-modal-call"
+              data-modal-target="modal-thanks">Отправить
+      </button>
+    </form>
+  </div>
+
+  <div id="modal-thanks" class="modal modal-form">
+    <img src="./img/sprites/sprite.svg#close" alt="" class="close-mod js-modal-close">
+    <p class="modal-title text-centered mb-25">Спасибо!</p>
+    <p class="modal-subtitle text-centered mb-40">Мы свяжемся с вами<br> в ближайшее время.</p>
+    <button type="submit" class="button button--link button-cooperation button-outlined js-modal-close mx-auto">
+      Закрыть
+    </button>
+  </div>
+
+  <div class="modal-bg js-modal-bg js-modal-close"></div>
 
 
   <!--<section class="section">

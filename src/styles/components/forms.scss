@@ -18,6 +18,10 @@
   }
 }
 
+.form--modal {
+
+}
+
 .form-hero {
   width: 400px;
   height: 335px;
@@ -79,6 +83,9 @@
     }
   }
 
+  .form--modal & {
+    background: $white url("../img/sprites/sprite.svg#person") no-repeat;
+  }
 }
 
 .form__input--phone {
@@ -90,6 +97,10 @@
     @media (min-width: $min-lg) {
       background: #D5D2D2 url("../img/sprites/sprite.svg#phone") no-repeat;
     }
+  }
+
+  .form--modal & {
+    background: $white url("../img/sprites/sprite.svg#phone") no-repeat;
   }
 
 }
@@ -104,6 +115,10 @@
     @media (min-width: $min-lg) {
       background: #D5D2D2 url("../img/sprites/sprite.svg#mail") no-repeat;
     }
+  }
+
+  .form--modal & {
+    background: $white url("../img/sprites/sprite.svg#mail") no-repeat;
   }
 }
 

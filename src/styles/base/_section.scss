@@ -1,14 +1,18 @@
 .section {
-  border-bottom: 1px solid $red;
+  //border-bottom: 1px solid $red;
   background: #F4F4F4;
 }
 
 .section--hero {
   background: $dark;
-  min-height: calc(100vh - 75px);
+  min-height: calc(100vh - 185px);
   padding-top: 90px;
   position: relative;
-  border-bottom: 1px solid $red;
+
+  @media (max-height: 667px){
+    min-height: calc(100vh - 140px);
+    padding-top: 40px;
+  }
 
   @media (min-width: $min-lg) {
     min-height: unset;
@@ -33,6 +37,7 @@
 
 .section--cards {
   padding-top: 35px;
+  padding-bottom: 10px;
 
   @media (min-width: $min-lg) {
     padding-top: 90px;
@@ -63,10 +68,12 @@
   background: $yellow;
   padding: 30px 0 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
 
   @media (min-width: $min-lg) {
     padding: 70px 0 50px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0;
   }
 }
 

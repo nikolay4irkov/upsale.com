@@ -3,7 +3,7 @@
   line-height: 31px;
   background: $yellow-logo;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 3px transparent;
+  -webkit-text-stroke: 2px transparent;
   color: $dark;
 
   @media screen and (min-width: $min-md) {
@@ -64,4 +64,10 @@
 
 .text-centered {
   text-align: center;
+}
+
+.text-lg-centered {
+  @media (min-width: $min-lg){
+    text-align: center;
+  }
 }

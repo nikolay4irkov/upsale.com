@@ -12,4 +12,5 @@ import './tabs';
 import './card';
 import './smooth-scroll';
 import './slider';
+import './modal';
 

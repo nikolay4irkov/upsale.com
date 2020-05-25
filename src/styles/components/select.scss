@@ -75,6 +75,10 @@
       background: #D4D2D2;
     }
   }
+
+  .form--modal & {
+    background: $white;
+  }
 }
 
 .options {
@@ -106,6 +110,10 @@
       padding: 18px 14px;
       background: #D4D2D2;
     }
+  }
+
+  .form--modal & {
+    background: $white;
   }
 }
 
